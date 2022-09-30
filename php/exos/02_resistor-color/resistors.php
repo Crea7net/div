@@ -3,7 +3,6 @@
 /**
  * (ɔ) Online FORMAPRO - GrCOTE7 -2022.
  */
-$letter = 'f';
 
 if (!function_exists('aff')) {
 	function aff($var, $txt = null)
@@ -14,7 +13,7 @@ if (!function_exists('aff')) {
 	}
 }
 
-echo '<table>';
+
 const COLORS = [
 	'black',
 	'brown',
@@ -30,11 +29,13 @@ const COLORS = [
 
 function colorCode(string $color): int
 {
-	foreach (COLORS as $k => $v) {
-		echo '<tr><td>' . $v . '</td><td>' . $k . '</td></tr>';
-	}
-	echo '</table>';
+	// echo '<table>';
+	// foreach (COLORS as $k => $v) {
+	// 	echo '<tr><td>' . $v . '</td><td>' . $k . '</td></tr>';
+	// }
+	// echo '</table>';
 
 	return array_keys(COLORS, $color)[0];
 }
-echo colorCode('violet');
+
+echo '<hr>' . colorCode('violet');

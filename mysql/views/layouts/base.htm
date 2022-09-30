@@ -7,20 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twig</title>
   <script>
-  //<![CDATA[
-  document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.10'><\/script>"
-    .replace(
-      "HOST", location.hostname));
+    //<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.10'><\/script>"
+      .replace(
+        "HOST", location.hostname));
   //]]>
   </script>
+  <link rel="stylesheet" href="{{ ROOT }}/assets/css/style.css">
 </head>
 
 <body>
-  {% include 'partials/header.htm' %}
+  <main>
+    {% include 'partials/nav.htm' %}
+    
+    {% include 'partials/header.htm' %}
 
-  {% block content %}
+    {% block content %}
     Contenu surchargé
-  {% endblock %}
+    {% endblock %}
+  </main>
 </body>
 
 </html>

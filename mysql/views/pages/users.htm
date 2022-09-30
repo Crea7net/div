@@ -1,0 +1,21 @@
+{% extends 'layouts/base.htm' %}
+
+{% block content %}
+
+<h1>Utilisateurs</h1>
+
+<table border="0"
+  style="background-color:grey; border-collapse: separate; border-spacing:0px; border-radius: 15px; color:white; margin:0 auto 20px;width:95%">
+  <th class="background-color:#000; padding:50px;">ID</th>
+  <th class="background-color:#000; padding:50px;margin-top:20px">Prénom</th>
+  <th>Email</th>
+  {% for user in users %}
+  <tr>
+    <td style="padding:3px 20px; text-align: right; border-collapse: collapse;">{{ user.id }}</td>
+    <td style="padding:0 20px">{{ user.firstname|capitalize }}</td>
+    <td class="padding-right: 10px; ùargin-right:10px;">{{ user.email }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

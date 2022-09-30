@@ -4,7 +4,7 @@
  * (ɔ) Online FORMAPRO - GrCOTE7 -2022.
  */
 
-$letter = 'f';
+$letter = 'g';
 
 if (!function_exists('aff')) {
 	function aff($var, $txt = null)
@@ -52,4 +52,5 @@ function diamond(string $letter): string
 	return '<p class="err">Seule une lettre doit-être donnée...</p>';
 }
 
+echo '';
 echo diamond($letter);

@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+  <h1><a href="https://exercism.org/tracks/php/exercises/diamond" target="_blank">Énoncé du problème</a></h1>
   <main class="diamond center">
     <?php
 	function aff($var, $txt = null)

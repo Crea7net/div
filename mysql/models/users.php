@@ -4,7 +4,7 @@
  * (ɔ) Online FORMAPRO - GrCOTE7 -2022.
  */
 
-include_once 'cnx.php';
+include_once 'models/cnx.php';
 
 $sql = 'select * from users order by id';
 

@@ -1,0 +1,11 @@
+
+{% set pages = ['Utilisateurs', 'Commentaires', 'Roles'] %}
+<nav>
+  <a href="/">Accueil</a>
+  {% for page in pages %}
+
+<a href="{{PATH}}{{ page|lower }}">{{ page ?? '<p class="err">Erreur 404</p>' }}</a>
+
+{% endfor %}
+
+</nav>
